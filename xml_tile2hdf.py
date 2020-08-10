@@ -7,8 +7,8 @@ import numpy as np
 import tables
 
 xmltile_path = '/path/to/xml_tiles/'
-hdf5_path = 'path/to/save.hdf5'
-csv = 'path/to/metadata.csv'
+hdf5_path = 'path/to/save/xml2hdf.hdf5'
+csv = 'path/to/xml2tile.csv'
 
 df = pd.read_csv(csv)
 df_xml['ids']=df_xml['tile_name'].str[:23]

@@ -155,7 +155,7 @@ if __name__ == '__main__':
     nc=int(3)
     num_classes=int(2)
 
-    hdf5_path = '/path/to/hdf5/for/inference/'
+    hdf5_path = '/path/to/tumor_tile_inference.hdf5/'
 
     dset = MyDataset(hdf5_path, transform)
     dloader = torch.utils.data.DataLoader(dset, batch_size=batchSize, shuffle=False)
@@ -180,4 +180,4 @@ if __name__ == '__main__':
     df.time = times
     df.prob = probs
     df.pred = preds
-    df.to_csv('/path/to/save/csv', index=False)
+    df.to_csv('/path/to/save/tumor_tile_inference_result.csv', index=False)

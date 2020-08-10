@@ -6,9 +6,9 @@ import cv2
 import numpy as np
 import tables
 
-img_path = 'path/to/svs_tiles'
-hdf5_path = 'path/to/save.hdf5'
-csv = 'path/to/metadata.csv'
+img_path = 'path/to/svs_tiles/'
+hdf5_path = 'path/to/save/tumor_tile_inference.hdf5'
+csv = 'path/to/tcga_metadata.csv' # please download from https://gdc.cancer.gov/about-data/publications/PanCan-Clinical-2018
 
 df = pd.read_csv(csv)
 

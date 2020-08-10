@@ -393,7 +393,7 @@ if __name__ == '__main__':
     cudnn.benchmark = True
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    csv = '/path/to/csv'
+    csv = 'path/to/tcga_metadata.csv' # please download from https://gdc.cancer.gov/about-data/publications/PanCan-Clinical-2018
     df = pd.read_csv(csv)
 
     imgs = glob.glob('/path/to/top100tiles/*.png')

@@ -270,7 +270,7 @@ if __name__ == '__main__':
     lr=0.001
     beta1=0.5
 
-    hdf5_path = '/path/to/hdf5/with/tumor/annotation/'
+    hdf5_path = '/path/to/xml2hdf.hdf5/'
     h5 = h5py.File(hdf5_path)
 
     list_IDs = {}
@@ -327,7 +327,8 @@ if __name__ == '__main__':
 
     bootstrap_auc(label_test, prob_test)
 
-    df = pd.DataFrame(columns=['prob', 'label'])
-    df.prob = prob_test
-    df.label = label_test
-    df.to_csv('/path/to/save/csv', index=False)
+    # To save the results in csv, please uncomment below.
+    # df = pd.DataFrame(columns=['prob', 'label'])
+    # df.prob = prob_test
+    # df.label = label_test
+    # df.to_csv('/path/to/save/csv', index=False)

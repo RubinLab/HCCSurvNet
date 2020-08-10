@@ -40,7 +40,7 @@ def apply_stain_norm(tile, normalizer):
 if __name__ == '__main__':
     xml_rootpath='/path/contains/xml_files/'
     slide_rootpath='/path/contains/whole_slide_images/'
-    out_rootpath='/path/to/save/image/tiles/'
+    out_rootpath='/path/to/save/xml_tiles/'
     scale_factor=32
     tile_size=1024
     normalizer = get_stain_normalizer()
@@ -131,7 +131,7 @@ if __name__ == '__main__':
     df = pd.DataFrame(columns=['tile_name', 'label'])
     df.tile_name = tile_names
     df.label = labels
-    df.to_csv('/path/to/save/csv', index=False)
+    df.to_csv('/path/to/save/xml2tile.csv', index=False)
     
 
 

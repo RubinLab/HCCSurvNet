@@ -43,7 +43,7 @@ if __name__ == '__main__':
     '''
     
     slide_rootpath='/path/contains/whole_slide_images/'
-    out_rootpath='/path/to/save/image/tiles/'
+    out_rootpath='/path/to/save/svs_tiles/'
     slide_list = [os.path.split(i)[1][:-4] for i in glob.glob(slide_rootpath+'*.svs')]
 
     start = sys.argv[1]
