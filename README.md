@@ -1,4 +1,4 @@
-# Predicting post-surgical recurrence of hepatocellular carcinoma from digital histopathologic images using deep learning  
+# HCCSurvNet: Predicting post-surgical recurrence of hepatocellular carcinoma from digital histopathologic images using deep learning  
   
 ![method_outline](method_outline.png)  
 
