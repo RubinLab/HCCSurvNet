@@ -9,7 +9,7 @@ The code is written in python.
 ## How to use
 
 0. Download diagnostic whole-slide images from [TCGA-LIHC project](https://portal.gdc.cancer.gov/projects/TCGA-LIHC)  
-1. Download TCGA-CDR-SupplementalTableS1.xlsx from [here](https://gdc.cancer.gov/about-data/publications/PanCan-Clinical-2018) and rename it to metadata.csv  
+1. Download TCGA-CDR-SupplementalTableS1.xlsx from [Integrated TCGA Pan-Cancer Clinical Data Resource](https://gdc.cancer.gov/about-data/publications/PanCan-Clinical-2018) and rename it to metadata.csv  
 2. Get annotations on whole-slide images using ImageScope in xml format  
 3. Run xml2tile.py  
 4. Run xml_tile2hdf.py  
