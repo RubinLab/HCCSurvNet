@@ -4,8 +4,6 @@
 
 This repository contains the code to quantify risk scores for recurrence in patients with hepatocellular carcinoma from H&E-stained FFPE histopathology images.
 
-The code is written in python.  
-
 ## How to use
 
 0. Download diagnostic whole-slide images from [TCGA-LIHC project](https://portal.gdc.cancer.gov/projects/TCGA-LIHC)  
