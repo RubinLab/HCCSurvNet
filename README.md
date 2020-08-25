@@ -28,7 +28,7 @@ This code was developed and tested in the following settings.
   
 ## Installation  
   
-Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html#linux-installers) on your machine (download the distribution that comes with python 3)  
+Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html#linux-installers) on your machine (download the distribution that comes with python3).  
   
 After setting up Miniconda, install OpenSlide (3.4.1):  
 ```
@@ -37,13 +37,12 @@ apt-get install openslide-tools
 Create a conda environment with environment.yml:
 ```
 conda env create -f environment.yaml
-```
-
+```  
 Activate the environment:
 ```shell
-conda activate clam
+conda activate hccsurvnet
 ```
-
+  
 ## Demo  
 ### Data preparation  
 Download diagnostic whole-slide images from [TCGA-LIHC project](https://portal.gdc.cancer.gov/projects/TCGA-LIHC) using [GDC Data Transfer Tool Client](https://gdc.cancer.gov/access-data/gdc-data-transfer-tool).  
