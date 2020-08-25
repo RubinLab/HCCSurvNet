@@ -28,14 +28,14 @@ This code was developed and tested in the following environment.
   
 ## Demo  
 ### Data preparation  
-Download diagnostic whole-slide images from [TCGA-LIHC project](https://portal.gdc.cancer.gov/projects/TCGA-LIHC) using [GDC Data Transfer Tool Client](https://gdc.cancer.gov/access-data/gdc-data-transfer-tool)  
+Download diagnostic whole-slide images from [TCGA-LIHC project](https://portal.gdc.cancer.gov/projects/TCGA-LIHC) using [GDC Data Transfer Tool Client](https://gdc.cancer.gov/access-data/gdc-data-transfer-tool).  
 ```
 gdc-client download -m gdc_manifest_tcga_lihc.txt
 ```
   
-Download TCGA-CDR-SupplementalTableS1.xlsx from [Integrated TCGA Pan-Cancer Clinical Data Resource](https://gdc.cancer.gov/about-data/publications/PanCan-Clinical-2018) and rename it to metadata.csv  
+Download TCGA-CDR-SupplementalTableS1.xlsx from [Integrated TCGA Pan-Cancer Clinical Data Resource](https://gdc.cancer.gov/about-data/publications/PanCan-Clinical-2018) and rename it to metadata.csv.  
   
-Get annotations on whole-slide images using [Aperio ImageScope](https://www.leicabiosystems.com/digital-pathology/manage/aperio-imagescope/) in XML format  
+Get annotations on whole-slide images using [Aperio ImageScope](https://www.leicabiosystems.com/digital-pathology/manage/aperio-imagescope/) in XML format.  
   
 ### Prepaere datasets for tumor tile classification  
 ```
@@ -77,4 +77,4 @@ This code is made available under the MIT License.
 ## Citation  
 Predicting post-surgical recurrence of hepatocellular carcinoma from digital histopathologic images using deep learning  
   
-Rikiya Yamashita, Jin Long, Atif Saleem, Daniel Rubin, Jeanne Shen.  
+Rikiya Yamashita, Jin Long, Atif Saleem, Daniel L. Rubin, Jeanne Shen.  
