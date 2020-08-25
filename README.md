@@ -44,7 +44,7 @@ conda activate hccsurvnet
 ```
   
 ## Demo  
-### Data preparation  
+### data collection  
 Download diagnostic whole-slide images from [TCGA-LIHC project](https://portal.gdc.cancer.gov/projects/TCGA-LIHC) using [GDC Data Transfer Tool Client](https://gdc.cancer.gov/access-data/gdc-data-transfer-tool).  
 ```
 gdc-client download -m gdc_manifest_tcga_lihc.txt
@@ -52,40 +52,42 @@ gdc-client download -m gdc_manifest_tcga_lihc.txt
   
 Download TCGA-CDR-SupplementalTableS1.xlsx from [Integrated TCGA Pan-Cancer Clinical Data Resource](https://gdc.cancer.gov/about-data/publications/PanCan-Clinical-2018) and rename it to metadata.csv.  
   
-Get annotations on whole-slide images using [Aperio ImageScope](https://www.leicabiosystems.com/digital-pathology/manage/aperio-imagescope/) in XML format.  
+Get tumor region annotations on whole-slide images using [Aperio ImageScope](https://www.leicabiosystems.com/digital-pathology/manage/aperio-imagescope/) in XML format.  
   
-### Prepaere datasets for tumor tile classification  
+### prepare dataset for tumor tile classification  
 ```
 python xml2tile.py  
 python xml_tile2hdf.py  
 ```
   
-### Train tumor tile classifier  
+### train and evaluate tumor tile classifier  
 ```
 python tumor_tile_classifier.py
 ```
-  
-### Prepare datasets for tumor tile inference  
+*** Output: AUROC (areas under the receiver operating characteristic curve) and its 95% confidence interval
+
+### prepare dataset (TCGA-HCC) for risk score prediction  
 ```
 python svs2tile.py  
 python svs_tile2hdf.py  
 ```
   
-### Tumor tile inference  
+### apply tumor tile classifier to the TCGA-HCC dataset  
 ```
 python tumor_tile_inference.py  
 ```
   
-### Select top-X tiles (Default: X=100)  
+### select top-X tiles (Default: X=100)  
 ```
 python select_topX.py  
 ```
   
-### Train risk score predictor  
+### train and evaluate risk score predictor  
 ```
 python risk_score_predictor.py  
 ```
-  
+*** Output: Harrell's and Uno's C-indices  
+
 Note: please edit paths in each .py file.  
   
 ## License  
