@@ -5,12 +5,12 @@
 This repository contains the code to quantify risk scores for recurrence in patients with hepatocellular carcinoma from H&E-stained FFPE histopathology images.
 
 ## Software Requirements  
-This code was developed and tested in the following environment.  
+This code was developed and tested in the following settings.  
 ### OS  
 - Ubuntu 18.04  
 ### GPU  
 - Nvidia GeForce RTX 2080 Ti  
-### Python Dependencies  
+### Dependencies  
 - python (3.6.10)  
 - numpy: (1.18.1)  
 - pandas (0.25.3)  
@@ -22,10 +22,28 @@ This code was developed and tested in the following environment.
 - openslice-python (1.1.1)  
 - staintools (2.1.2)  
 - h5py (2.9.0)  
-- pytable (3.5.1)  
+- pytables (3.5.1)  
 - pytorch (1.4.0)  
 - torchvision (0.5.0)  
   
+## Installation  
+  
+Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html#linux-installers) on your machine (download the distribution that comes with python 3)  
+  
+After setting up Miniconda, install OpenSlide (3.4.1):  
+```
+apt-get install openslide-tools
+```
+Create a conda environment with environment.yml:
+```
+conda env create -f environment.yaml
+```
+
+Activate the environment:
+```shell
+conda activate clam
+```
+
 ## Demo  
 ### Data preparation  
 Download diagnostic whole-slide images from [TCGA-LIHC project](https://portal.gdc.cancer.gov/projects/TCGA-LIHC) using [GDC Data Transfer Tool Client](https://gdc.cancer.gov/access-data/gdc-data-transfer-tool).  
