@@ -59,7 +59,7 @@ python svs_tile2hdf.py
 python tumor_tile_inference.py  
 ```
   
-### Select top-X tiles (Default: X==100)  
+### Select top-X tiles (Default: X=100)  
 ```
 python select_topX.py  
 ```
@@ -69,7 +69,7 @@ python select_topX.py
 python risk_score_predictor.py  
 ```
   
-Note: please edit path in each file  
+Note: please edit paths in each .py file.  
   
 ## License  
 This code is made available under the MIT License.  
