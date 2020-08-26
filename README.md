@@ -1,4 +1,4 @@
-# HCCSurvNet: Predicting post-surgical recurrence of hepatocellular carcinoma from digital histopathologic images using deep learning  
+# HCCSurvNet: Deep learning predicts post-surgical recurrence of hepatocellular carcinoma from digital histopathologic images  
   
 ![method_outline](method_outline.png)  
 
@@ -94,6 +94,6 @@ Note: please edit paths in each .py file.
 This code is made available under the MIT License.  
   
 ## Citation  
-Predicting post-surgical recurrence of hepatocellular carcinoma from digital histopathologic images using deep learning  
+Deep learning predicts post-surgical recurrence of hepatocellular carcinoma from digital histopathologic images  
   
 Rikiya Yamashita, Jin Long, Atif Saleem, Daniel L. Rubin, Jeanne Shen.  
