@@ -36,7 +36,7 @@ apt-get install openslide-tools
 ```
 Create a conda environment with environment.yml:
 ```
-conda env create -f environment.yaml
+conda env create -f environment.yml
 ```  
 Activate the environment:
 ```shell
