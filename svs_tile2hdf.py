@@ -15,9 +15,9 @@ df = pd.read_csv(csv)
 ids = df.bcr_patient_barcode.values.tolist()
 random.seed(218)
 
-print('Start Glob.Glog')
+print('Start Glob.Glob')
 all_tiles = glob.glob(img_path+'*/*.png')
-print('End Glob.Glog')
+print('End Glob.Glob')
 
 tiles = []
 ids = []
@@ -25,9 +25,6 @@ slides = []
 fnames = []
 pfi = []
 pfitime = []
-
-def isNaN(num):
-    return num != num
 
 for n, j in enumerate(all_tiles):
     if n % 1000 == 0 and n > 1:
