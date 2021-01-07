@@ -94,6 +94,8 @@ Note: please edit paths in each .py file.
 This code is made available under the MIT License.  
   
 ## Citation  
-Deep learning predicts post-surgical recurrence of hepatocellular carcinoma from digital histopathologic images  
+Rikiya Yamashita, Jin Long, Atif Saleem, Daniel L. Rubin, Jeanne Shen  
   
-Rikiya Yamashita, Jin Long, Atif Saleem, Daniel L. Rubin, Jeanne Shen.  
+Deep learning predicts postsurgical recurrence of hepatocellular carcinoma from digital histopathologic images  
+  
+Scientific Reports (Accepted on January 4th, 2021)
